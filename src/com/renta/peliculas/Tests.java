@@ -8,10 +8,10 @@ class Tests {
 
 	@Test
 	public void pruebaUno() {
-		Pelicula movie = new Pelicula("Pirates of the Caribbean", 0);
-		Disco disc = new Disco("1234", movie);
-		Alquiler rental = new Alquiler(disc, 22);
-		Cliente cliente = new Cliente("Daniel");
+		Pelicula movie = new Pelicula("Anihilation", 0);
+		Disco disc = new Disco("4321", movie);
+		Alquiler rental = new Alquiler(disc, 43);
+		Cliente cliente = new Cliente("Marian");
 
 		cliente.addRental(rental);
 		cliente.statement();
