@@ -3,8 +3,8 @@ package com.renta.peliculas;
 import java.util.HashMap;
 
 public class Registrar {
-	private static HashMap Peliculas = new HashMap();
-	private static HashMap Clientes = new HashMap();
+	private static HashMap Peliculas = Fabrica.fabricaHashMap();
+	private static HashMap Clientes = Fabrica.fabricaHashMap();
 	
 	public static Object get(String coleccion, String nombre) {
 		if ("Peliculas".equals(coleccion)){

@@ -1,6 +1,16 @@
 package com.renta.peliculas;
 
 public class Disco {
+
+	private String numeroSerie;
+	private Pelicula pelicula;
+
+	public Disco(String numeroSerie, Pelicula pelicula) {
+		super();
+		this.numeroSerie = numeroSerie;
+		this.pelicula = pelicula;
+	}
+
 	public Pelicula getPelicula() {
 		return pelicula;
 	}
@@ -13,12 +23,4 @@ public class Disco {
 		this.numeroSerie = numeroSerie;
 	}
 
-	public Disco(String numeroSerie, Pelicula pelicula) {
-		super();
-		this.numeroSerie = numeroSerie;
-		this.pelicula = pelicula;
-	}
-
-	private String numeroSerie;
-	private Pelicula pelicula;
 }

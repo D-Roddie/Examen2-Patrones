@@ -73,5 +73,5 @@ public class Cliente {
 		Registrar.add("Clientes", this);
 	}
 
-	private ArrayList<Alquiler> alquileres = new ArrayList<>();
+	private ArrayList<Alquiler> alquileres = Fabrica.fabricaArrayList();
 }
