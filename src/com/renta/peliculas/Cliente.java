@@ -4,12 +4,22 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Cliente {
+	private String nombre;
+
 	public Cliente(String nombre) {
 		super();
 		this.nombre = nombre;
 	}
 
-	private String nombre;
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	private ArrayList<Alquiler> alquileres = Fabrica.fabricaArrayList();
 
 	public String statement() {
 		double montoTotal = 0;
@@ -57,10 +67,6 @@ public class Cliente {
 
 	}
 
-	public String getNombre() {
-		return nombre;
-	}
-
 	public void addRental(Alquiler arg) {
 		alquileres.add(arg);
 	}
@@ -73,5 +79,4 @@ public class Cliente {
 		Registrar.add("Clientes", this);
 	}
 
-	private ArrayList<Alquiler> alquileres = Fabrica.fabricaArrayList();
 }

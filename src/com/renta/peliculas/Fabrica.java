@@ -8,11 +8,10 @@ public class Fabrica {
 		return new HashMap();
 
 	}
-	
+
 	public static ArrayList fabricaArrayList() {
 		return new ArrayList();
-		
-	}
 
+	}
 
 }

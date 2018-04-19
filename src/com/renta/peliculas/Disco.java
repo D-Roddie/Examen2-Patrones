@@ -11,16 +11,20 @@ public class Disco {
 		this.pelicula = pelicula;
 	}
 
-	public Pelicula getPelicula() {
-		return pelicula;
-	}
-
 	public String getNumeroSerie() {
 		return numeroSerie;
 	}
 
 	public void setNumeroSerie(String numeroSerie) {
 		this.numeroSerie = numeroSerie;
+	}
+
+	public Pelicula getPelicula() {
+		return pelicula;
+	}
+
+	public void setPelicula(Pelicula pelicula) {
+		this.pelicula = pelicula;
 	}
 
 }
