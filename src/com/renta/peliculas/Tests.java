@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import com.renta.peliculas.fabrica.Fabrica;
+
 class Tests {
 
 	@Test
@@ -13,8 +15,10 @@ class Tests {
 		Alquiler rental = new Alquiler(disc, 43);
 		Cliente cliente = new Cliente("Marian");
 
-		cliente.addRental(rental);
-		cliente.statement();
+		Rental movieRental = Fabrica.fabricaRental();
+
+		movieRental.addRental(rental);
+
 	}
 
 }

@@ -1,9 +1,12 @@
 package com.renta.peliculas;
 
+import com.renta.peliculas.estrategia.Registrar;
+
 public class Pelicula {
 	public static final int INFANTIL = 2;
 	public static final int NORMAL = 0;
 	public static final int ESTRENO = 1;
+	public static Registrar registrar = new Registrar();
 
 	private String nombre;
 	private int codigoPrecio;
@@ -31,11 +34,12 @@ public class Pelicula {
 	}
 
 	public void persist() {
-		Registrar.add("Peliculas", this);
+
+		registrar.add2(this);
 	}
 
 	public static Pelicula get(String name) {
-		return (Pelicula) Registrar.get("Peliculas", name);
+		return (Pelicula) registrar.get2(name);
 	}
 
 }
